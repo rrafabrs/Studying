@@ -1,0 +1,208 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-shadow: 4px 4px 5px red;
+}
+.nothing {
+    color: rgb(0, 255, 0);
+}
+#teste {
+    color: orange;
+}
+.abc {
+    border: 10px dashed yellow;
+    margin: 100px 50px 200px 0px;
+    padding: 2px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: blue;
+    margin: 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes bigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(.5);}
+    100% {transform: scale(1);}
+}
+
+@keyframes change {
+    0% {background-color: brown;}
+    25% {background-color: red;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: blue}
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+htm {
+    background-image: radial-gradient(blue, yellow, green);
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+}
+
+#box5 {
+    animation: moveBox 5s 3s;
+    background-color: yellow;
+    position: relative;
+}
+
+#box4 {
+    animation: change 3s 2s infinite;
+}
+
+
+#box3 {
+    animation: bigger infinite 8s ease-in;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: 4s;
+    animation-timing-function: ease-in-out;
+    background-image: radial-gradient(circle, red, green, yellow);
+    animation-iteration-count: infinite;
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+nav {
+    background-color: rgb(228, 109, 105);
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 40px;
+}
+
+.foto {
+    border-radius: 50%;
+    box-shadow: 10px 20px 10px rgb(77, 71, 71);
+}
+
+.flex {
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+.nav-wrapper {
+    background-color: aquamarine;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 150px ) ;
+    grid-template-rows: repeat(3, [row] auto );
+    background-color: white;
+    color: #444;
+}
+
+.Box {
+    background-color: white;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index: 10;
+}
+
+.a {
+    grid-column: col / span 2;
+    grid-row: row;
+    display: flex;
+    justify-content: center;
+}
+
+.b {
+    grid-column: col 4 / span 2;
+    grid-row: row;
+    display: flex;
+    justify-content: center;
+}
+
+.c {
+    grid-column: col / span 5;
+    grid-row: row 2;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow, purple);
+}
+
+.d {
+    grid-column: col 1 / span 3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3 / span 3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2;
+    background-color: rgba(49, 121, 207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(purple, yellow, pink);
+}
